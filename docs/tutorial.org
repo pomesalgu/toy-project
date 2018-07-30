@@ -47,7 +47,5 @@ python manage.py createsuperuser
 3. https://github.com/settings/keys
    new ssh key버튼 누른뒤, 하단란에 붙여넣어 생성
 4. ssh -T git@github.com && github 비번 입력해 확인
-
-git remote set-url origin git+ssh://git@github.com/pomesalgu/toy-project.git
-
-test
+5. git remote set-url origin git+ssh://git@github.com/pomesalgu/toy-project.git
+6. ssh-add ~/.ssh/id_rsa
