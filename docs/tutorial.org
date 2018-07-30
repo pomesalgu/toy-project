@@ -1,4 +1,5 @@
-*** 가상환경 설정하기
+*** 환경 설정하기
+* 가상환경 설정하기
 mkvirtualenv [가상환경이름]
 workon [가상환경 이름]
 
@@ -7,7 +8,7 @@ python3 -m pip install --upgrade pip
 * 특정 버전 django 설치
 pip install django~=1.11.0
 
-** 프로젝트 만들기
+* 프로젝트 만들기
 django-admin startproject [프로젝트 공간명]
 ex) django-admin startproject mysite
 
@@ -19,11 +20,11 @@ ex) django-admin startproject mysite
         urls.py     : Django project url 선언 저장
         wsgi.py     : 현재 프로젝트를 서비스하기 위한 WSGI호환 웹 서버 진입점
 
-** 서버 실행
-python  manage.py runserver 0.0.0.0:8000
+* 서버 실행
+python manage.py runserver 0.0.0.0:8000
 
 
-** django 애플리케이션 만들기
+* django 애플리케이션 만들기
 python manage.py startapp [애플리케이션 이름]
 ./blog/migrations
                   __init__.py
@@ -39,3 +40,6 @@ python manage.py migrate 로 모델 적용
 * 슈퍼유저 생성
 0.0.0.0:8000
 python manage.py createsuperuser
+
+*** github push시, 유저명, 패스워드 입력 안하려면..
+git remote set-url origin git@github.com:pomesalgu/toy-project.git
