@@ -49,3 +49,5 @@ python manage.py createsuperuser
 4. ssh -T git@github.com && github 비번 입력해 확인
 
 git remote set-url origin git+ssh://git@github.com/pomesalgu/toy-project.git
+
+test
