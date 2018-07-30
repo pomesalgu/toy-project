@@ -1,0 +1,41 @@
+*** 가상환경 설정하기
+mkvirtualenv [가상환경이름]
+workon [가상환경 이름]
+
+* 최신의 pip인지 확인
+python3 -m pip install --upgrade pip
+* 특정 버전 django 설치
+pip install django~=1.11.0
+
+** 프로젝트 만들기
+django-admin startproject [프로젝트 공간명]
+ex) django-admin startproject mysite
+
+./
+  manage.py         : 프로젝트와 상호작용하는 커맨드라인 유틸리티
+  mysite/           : python위한 실제 python 패키지 저장
+        __init__.py : 이 디렉토리를 패키지처럼 다뤄달란 빈파일
+        settings.py : django project 환경/구성 저장
+        urls.py     : Django project url 선언 저장
+        wsgi.py     : 현재 프로젝트를 서비스하기 위한 WSGI호환 웹 서버 진입점
+
+** 서버 실행
+python  manage.py runserver 0.0.0.0:8000
+
+
+** django 애플리케이션 만들기
+python manage.py startapp [애플리케이션 이름]
+./blog/migrations
+                  __init__.py
+       admin.py
+       models.py
+       tests.py
+       views.py
+
+models.py에서 모델 내용 만든 뒤,
+python manage.py makemigrations blog
+python manage.py migrate 로 모델 적용
+
+* 슈퍼유저 생성
+0.0.0.0:8000
+python manage.py createsuperuser
