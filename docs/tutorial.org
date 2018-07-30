@@ -42,4 +42,10 @@ python manage.py migrate 로 모델 적용
 python manage.py createsuperuser
 
 *** github push시, 유저명, 패스워드 입력 안하려면..
-git remote set-url origin git@github.com:pomesalgu/toy-project.git
+1. ssh-keygen -t rsa -b 4096 -C "pomesalgu@github.com"
+2. /Users/유저명/.ssh/id_rsa.pub 내용 복사
+3. https://github.com/settings/keys
+   new ssh key버튼 누른뒤, 하단란에 붙여넣어 생성
+4. ssh -T git@github.com && github 비번 입력해 확인
+
+git remote set-url origin git+ssh://git@github.com/pomesalgu/toy-project.git
