@@ -5,4 +5,4 @@ virtualenvs/toyproject/*
 db.sqlite3
 /static
 .DS_Store
-docs/tutorial.org
+docs/*.org
