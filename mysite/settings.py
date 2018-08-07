@@ -43,7 +43,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'blog'
+    'django_extensions',
+    # https://github.com/django-extensions/django-extensions
+    'blog',
 ]
 
 MIDDLEWARE = [

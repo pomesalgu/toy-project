@@ -1,0 +1,9 @@
+<li class='post {% if post.published_data == None %}draft-post{% endif %}'>
+  <a href='{% url 'post_detail' pk=post.pk %}'>
+    <p>
+      <span>{{forloop.counter}}</span>
+      <span>{{post.title}}</span>
+      <span>{{post.published_date |date:"Y-m-d H:m"}}</span>
+    </p>
+  </a>
+</li>

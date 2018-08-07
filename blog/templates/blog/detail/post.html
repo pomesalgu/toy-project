@@ -1,0 +1,23 @@
+{% extends 'blog/base.html' %}
+{% block header %}
+<a href='{% url 'post_list' %}'>
+  <span>목록</span>
+</a>
+{% endblock %}
+{% block content %}
+<div>
+  <span>{{post.title}}</span>
+  <span>{{post.published_date |date:"Y-m-d H:m"}}</span>
+</div>
+<div>
+  <p>{{post.content|linebreaksbr}}</p>
+</div>
+{% if request.user.is_authenticated %}
+<a href='{% url 'post_edit' pk=post.pk %}'>
+  <span>수정</span>
+</a>
+<a href='{% url 'post_edit' pk=post.pk %}'>
+  <span>삭제</span>
+</a>
+{% endif %}
+{% endblock %}

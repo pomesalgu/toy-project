@@ -1,0 +1,26 @@
+body {
+    font-family: 'Source Sans Pro', 'Nanum Gothic',  sans-serif;
+}
+*:lang(ko) {
+    font-family: 'Nanum Gothic',  sans-serif;
+}
+*:lang(en) {
+    font-family: 'Source Sans Pro',  sans-serif;
+}
+
+h1 {
+    color: #ffaeae;
+}
+div {
+    border: 1px solid blue;
+}
+li {
+    list-style-type: none;
+}
+
+.post {
+
+}
+.draft-post{
+    color: red
+}

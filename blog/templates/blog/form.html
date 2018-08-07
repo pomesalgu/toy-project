@@ -1,0 +1,19 @@
+{% extends 'blog/base.html' %}
+
+n{% block content %}
+<form method="POST" class="post-form">
+  {% csrf_token %}
+  {{form.as_p}}
+  <button type="submit">
+    저장
+  </button>
+  <a href='{% if post is None %}
+     {% url 'post_list' %}
+     {% else %}
+     {% url 'post_detail' pk=post.pk %}
+     {% endif %}'>
+    <span>취소</span>
+  </a>
+
+</form>
+{% endblock %}
