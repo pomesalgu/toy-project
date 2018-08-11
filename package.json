@@ -1,0 +1,35 @@
+{
+  "name": "toyproject",
+  "version": "1.0.0",
+  "description": "웹 작업에 필요한 부분만 설치",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "dependencies": {
+    "react": "^16.4.2"
+  },
+  "devDependencies": {
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-livereload": "^3.8.1",
+    "gulp-minify-html": "^1.0.6",
+    "gulp-sass": "^4.0.1",
+    "gulp-uglify": "^3.0.1",
+    "gulp-webserver": "^0.9.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/pomesalgu/toy-project.git"
+  },
+  "author": "pomesalgu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pomesalgu/toy-project/issues"
+  },
+  "homepage": "https://github.com/pomesalgu/toy-project#readme"
+}
